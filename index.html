@@ -9,7 +9,6 @@
         body {
             margin: 0;
             padding-top: 250px;
-            padding-bottom: 2000px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -27,6 +26,17 @@
             height: 100%;
             object-fit: cover; /* Ensures the video covers the entire screen */
             z-index: -1; /* Keeps the video behind other elements */
+        }
+
+        /* Logo styling */
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 70px; /* Set width for scalable SVG */
+            height: 70px; /* Set height to match width */
+            z-index: 10; /* Ensures it stays above all content */
+            cursor: pointer;
         }
 
         /* Centralized container for content */
@@ -58,7 +68,7 @@
         /* PDF viewer styling */
         .pdf-viewer {
             width: 90%;
-            height: 70%; /* Adjusted to fit below content */
+            height: 60%; /* Adjusted to fit below content */
             overflow-y: auto;
             background: rgba(255, 255, 255, 0.8); /* Slightly transparent background for the viewer */
             border: 2px solid #ddd;
@@ -85,6 +95,9 @@
         <source src="https://github.com/DART-Skyboard/DART-Skyboard.github.io/blob/main/Untitled%202024-11-30%2013.18.11.mp4?raw=true" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+
+    <!-- Logo/Menu Placeholder -->
+    <img src="https://github.com/DART-Skyboard/DART-Skyboard.github.io/blob/main/DART%20Cargo%20Bay%20White%20Vector%20(20241130015608).svg?raw=true" alt="Logo Placeholder" class="logo">
 
     <div class="content">
         <h1>Autumn Documentation</h1>
